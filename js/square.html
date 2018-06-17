@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-3 square of the number</title>
+</head>
+<body>
+	Enter any Number:<input type="text" id="n"/><br></br>
+	<button type="button" onclick="squaren('n')">answer</button>
+	<p id="ans"></p>
+	<script type="text/javascript">
+		//var a=document.getElementById("n").value;
+		function squaren(n)
+		{
+			var a=document.getElementById("n").value;
+			document.getElementById("ans").innerHTML = "The result of squaring the number "+a+" is "+(a*a);
+		}
+		//document.getElementById("ans").innerHTML =squaren("n");
+	</script>
+</body>
+</html>

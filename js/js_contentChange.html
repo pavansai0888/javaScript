@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Which Country are you from?</p>
+
+<button onclick="myFunction()">check answer</button>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var res = str.replace("Which Country are you from?", "I am from India");
+    document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

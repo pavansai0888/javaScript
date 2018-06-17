@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area of square</title>
+</head>
+<body>
+	<p>Calculate Area of square</p>
+	Enter Area:<input type="text" id="s"></input><br></br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="button" onclick="area('s')">Calculate</button><br></br>
+	<span>
+    		Answer:<input type="text" id="d1">
+	</span>
+	<script type="text/javascript">
+		function area(s)
+		{
+			var a=document.getElementById("s").value;
+			document.getElementById("d1").value=a*a;
+		}
+	</script>
+</body>
+</html>

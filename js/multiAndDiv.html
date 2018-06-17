@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication and Division</title>
+</head>
+<body>
+	1st Number : <input type="text" id="n1"/><br></br>
+	2nd Number : <input type="text" id="n2"/><br></br>
+	<button type="button" onclick="multi()">Multiply</button>
+	<button type="button" onclick="div()">division</button>
+	<p id="ans"></p>
+	<p></p>
+	<script type="text/javascript">
+		function multi()
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("ans").innerHTML = "The Result is:\n"+(a*b);
+		}
+		function div()
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("ans").innerHTML = "The Result is:\n"+(a/b);
+		}
+	</script>
+</body>
+</html>

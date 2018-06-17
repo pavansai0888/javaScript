@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arthematic operations</title>
+</head>
+<body>
+	Enter Number one:<input type="text" id="n1"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	Enter Number two:<input type="text" id="n2"/><br></br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<button type="button" onclick="add('n1','n2')">+</button>&nbsp;
+	<button type="button" onclick="sub('n1','n2')">-</button>&nbsp;
+	<button type="button" onclick="multi('n1','n2')">x</button>&nbsp;
+	<button type="button" onclick="div('n1','n2')">/</button>&nbsp;
+	<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	Answer:<input type="text" id="d1">
+	
+	<script type="text/javascript">
+		function add(n1,n2)
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("d1").value=Number(a)+Number(b);
+
+		}
+		function sub(n1,n2)
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("d1").value=a-b;
+
+		}
+		function multi(n1,n2)
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("d1").value=a*b;
+
+		}
+		function div(n1,n2)
+		{
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			document.getElementById("d1").value=a/b;
+
+		}
+	</script>
+
+</body>
+</html>

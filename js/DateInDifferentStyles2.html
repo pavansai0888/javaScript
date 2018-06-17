@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date in all formates</title>
+</head>
+<body>
+	<p id="dt1" align="center"></p>
+	<p id="dt2" align="center"></p>
+  <p id="dt4" align="center"></p>
+  <p id="dt5" align="center"></p>
+	<script>
+    	var d1 = new Date();
+  		var d=d1.getDate();
+  		var m=d1.getMonth()+1;
+  		var y=d1.getFullYear();
+  		document.getElementById("dt1").innerHTML = d + "-" + m + "-"+ y;
+  		document.getElementById("dt2").innerHTML = m + "-" + d + "-"+ y;
+  	//	document.getElementById("dt3").innerHTML = y + "-" + m + "-"+ d;
+      document.getElementById("dt4").innerHTML = d + "/" + m + "/"+ y;
+      document.getElementById("dt5").innerHTML = m + "/" + d + "/"+ y;
+      //document.getElementById("dt6").innerHTML = y + "/" + m + "/"+ d;
+
+  	</script>
+</body>
+</html>
